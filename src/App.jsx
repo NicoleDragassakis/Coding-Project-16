@@ -26,7 +26,8 @@ const App = () => {
     },
   ]);
 
-  // Function to handle adding a new product
+  // Function to handle adding a new product 
+  //TASK SEVEN
   const addProduct = (newProduct) => {
     setProducts((prevProducts) => [
       ...prevProducts,
