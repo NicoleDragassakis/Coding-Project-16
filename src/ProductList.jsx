@@ -9,7 +9,7 @@ const ProductList = ({ products }) => {
       <ul>
         {products.map((product) => (
           <ProductItem
-            key={product.id}  
+            key={product.id}  //TASK FIVE ensure each product Item in the list is given a key prop
             product={product}  
           />
         ))}
