@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import ProductList from './ProductList'
-import AddProductForm from './AddProductForm';
-import './App.css'
+// App.jsx
+import React, { useState } from 'react';
+import ProductList from './ProductList';
+import AddProductForm from './AddProductForm'; // Ensure this import matches the default export
 
 const App = () => {
   // Define the default list of products
@@ -37,11 +37,7 @@ const App = () => {
   return (
     <div className="app">
       <h1>Product List</h1>
-
-      {}
       <ProductList products={products} />
-
-      {}
       <AddProductForm addProduct={addProduct} />
     </div>
   );
