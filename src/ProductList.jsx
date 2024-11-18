@@ -1,20 +1,22 @@
+// ProductList.jsx
 import React from 'react';
+import ProductItem from './ProductItem';
 
 const ProductList = ({ products }) => {
   return (
     <div>
+      <h2>Product List</h2>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>
-            <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <p>${product.price.toFixed(2)}</p>
-          </li>
+          <ProductItem
+            key={product.id}  
+            product={product}  
+          />
         ))}
       </ul>
     </div>
   );
 };
 
-export default ProductList;
 
+export default ProductList;
